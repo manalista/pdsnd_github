@@ -2,13 +2,6 @@ import time
 import pandas as pd
 import numpy as np
 
-
-def maybe_exit(value_typed):
-    """Exit the program if the value_typed is 'exit'"""
-    if value_typed.lower() == 'exit':
-        print("Exiting the program. Have a nice day!")
-        exit()
-
 def prompt_allowed_value(values_list, str_detail):
     """Prompts user a value from 'values_list' and return it (or exit if user wants to)"""
 
@@ -30,6 +23,12 @@ def prompt_allowed_value(values_list, str_detail):
     print(f"Ok. You choose: {value}.\n")
     return value 
 
+def maybe_exit(value_typed):
+    """Exit the program if the value_typed is 'exit'"""
+    if value_typed.lower() == 'exit':
+        print("Exiting the program. Have a nice day!")
+        exit()
+        
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
