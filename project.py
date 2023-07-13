@@ -49,7 +49,7 @@ def get_filters():
     # get user input for weekday (monday, tuesday, ... , sunday)
     day = prompt_allowed_value(['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'], 'week day')
 
-    print('-'*40)
+    print('-'*80)
     return city, month, day
 
 
