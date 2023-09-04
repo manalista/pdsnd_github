@@ -2,6 +2,7 @@ import time
 import pandas as pd
 import numpy as np
 
+#Teste
 def prompt_allowed_value(values_list, str_detail):
     """Prompts user a value from 'values_list' and return it (or exit if user wants to)"""
 
